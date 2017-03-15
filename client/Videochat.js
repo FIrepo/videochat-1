@@ -20,7 +20,7 @@ class Videochat extends React.Component {
       this.setState({videoSrc: window.URL.createObjectURL(stream)});
 
       // setup video frames recorder
-      let videorecorder = VideoRecorder(this.localVideo, this.state.videoWidth, this.state.videoHeight);
+      let videorecorder = VideoRecorder(this.localVideo, this.state.videoWidth, this.state.videoHeight, 0.1);
       videorecorder.start(videoFrameInterval, (blob) => {
         socket.emit('video', blob);
       });

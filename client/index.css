@@ -1,0 +1,42 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #b0e0c0;
+}
+
+#videochat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#localvideo {
+    flex-grow: 1;
+}
+
+#videochat label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+#videochat p {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+}
+
+#remotevideo {
+    flex-grow: 1;
+}

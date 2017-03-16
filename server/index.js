@@ -14,10 +14,6 @@ io.on('connection', function (socket) {
   socket.on('audio', function (blob) {
     socket.broadcast.volatile.emit('audio', blob);
   });
-
-  socket.on('disconnect', function () {
-    socket.broadcast.emit('leave', {id: socket.id});
-  });
 });
 
 server.listen(process.env.PORT || 3000);
